@@ -18,8 +18,16 @@ pip install -i https://test.pypi.org/simple/ foocat3
 - TODO
 
 ### Usage
-
-- TODO
+```
+>>> import pandas as pd
+>>> a = pd.Categorical(["character", "hits", "your", "eyeballs"])
+>>> b = pd.Categorical(["but", "integer", "where it", "counts"])
+>>> cat.catbind(a, b)
+```
+```
+[character, hits, your, eyeballs, but, integer, where it, counts]
+Categories (8, object): [but, character, counts, eyeballs, hits, integer, where it, your]
+```
 
 ### Credits
 This package was created with Cookiecutter and the UBC-MDS/cookiecutter-ubc-mds project template, modified from the [pyOpenSci/cookiecutter-pyopensci](https://github.com/pyOpenSci/cookiecutter-pyopensci) project template and the [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage).
